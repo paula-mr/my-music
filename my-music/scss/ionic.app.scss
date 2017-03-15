@@ -20,11 +20,15 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
-
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
 .logo {
   float: left;
   width: auto;
   height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PT Sans Narrow', sans-serif;
 }
 
 .title {
