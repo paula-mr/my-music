@@ -1,11 +1,15 @@
 <ion-view view-title="Browse Music">
   <ion-content>
+    <label class="item item-input">
+      <input type="text" ng-model="song.search" class="search-query"
+              id="songSearch" placeholder="Browse">
+    </label>
     <ion-list>
-      <ion-item ng-repeat="song in songs">
-        <img ng-src='{{song.albumArtURL}}'>
-        <h2>Nome: {{song.title}}</h2>
-        <h3>Artista: {{song.artist}}</h3>
-        <h4>Album: {{song.album}}</h4>
+      <ion-item ng-repeat="song in songs | filter:song.search | orderBy: title">
+        <div><img ng-src='{{song.albumArtURL}}'></div>
+        <div><i><h2>Nome: {{song.title}}</h2></i>
+        <i><h3>Artista: {{song.artist}}</h3></i>
+        <i><h4>Album: {{song.album}}</h4></i></div>
       </ion-item>
     </ion-list>
   </ion-content>
