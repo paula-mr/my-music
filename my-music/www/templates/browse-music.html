@@ -1,0 +1,12 @@
+<ion-view view-title="Browse Music">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="song in songs">
+        <img ng-src='{{song.albumArtURL}}'>
+        <h2>Nome: {{song.title}}</h2>
+        <h3>Artista: {{song.artist}}</h3>
+        <h4>Album: {{song.album}}</h4>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

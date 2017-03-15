@@ -33,10 +33,11 @@ angular.module('music', ['ionic', 'music.controllers'])
   })
 
   .state('app.browse', {
-      url: '/browse',
+      url: '/browse-music',
       views: {
         'mainContent': {
-          templateUrl: 'templates/browse.html'
+          templateUrl: 'templates/browse-music.html',
+          controller: 'BrowseMusicCtrl'
         }
       }
     })
