@@ -26,6 +26,7 @@ $dark:                            #444 !default;
   used under CC BY http://creativecommons.org/licenses/by/4.0/
   Modified icons to fit ionicon’s grid from original.
 */
+@import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow");
 @font-face {
   font-family: "Ionicons";
   src: url("../lib/ionic/fonts/ionicons.eot?v=2.0.1");
@@ -9819,6 +9820,9 @@ a.button {
   float: left;
   width: auto;
   height: auto; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PT Sans Narrow', sans-serif; }
 
 .title {
   align-self: center; }
